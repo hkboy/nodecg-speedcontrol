@@ -12,7 +12,7 @@ body {
 }
 
 #window-container {
-    background-image: url('/graphics/nodecg-speedcontrol/images/Intermission.png');
+    background-image: url('/graphics/nodecg-speedcontrol/images/GreenBack.png');
     width: 1280px;
     height: 720px;
     overflow: hidden;
@@ -22,25 +22,32 @@ body {
 }
 
 #comingUp {
-    font-family: FFFForward;
-    color: #856899;
-    font-size: 20px;
-    text-align: right;
-    padding-bottom: 15px;
+    font-family: arial;
+    font-style: italic;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 2px;
     width: 400px;
 }
 
 #justMissed {
-    font-family: FFFForward;
-    color: #856899;
-    font-size: 20px;
-    padding-bottom: 15px;
+
+      font-family: arial;
+      font-style: italic;
+      font-weight: bold;
+    color: #ffffff;
+    font-size: 30px;
+    padding-bottom: 2px;
     width: 400px;
 }
 
 #comingUpRun {
     position: absolute;
-    font-family: FFFForward;
+    font-family: arial;
+    font-style: italic;
+    font-weight: bold;
     font-size: 14px;
     display: flex;
     flex-flow: row wrap;
@@ -49,7 +56,7 @@ body {
 
 #justMissedRun {
     position: absolute;
-    font-family: FFFForward;
+
     display: flex;
     flex-flow: row wrap;
     font-size: 14px;
@@ -58,8 +65,11 @@ body {
 
 
 #informationMarquee {
-    font-family: FFFForward;
-    color: #856899;
+
+      font-family: arial;
+      font-style: italic;
+      font-weight: bold;
+    color: #ffffff;
     position: absolute;
     top: 500px;
     left: 0px;
@@ -74,31 +84,41 @@ body {
 }
 
 #comingUpGame {
-    padding: 2px;
-    color: #856899;
+    color: #ffffff;
     width: 400px;
-    background: #362b41;
+        font-size: 30px;
+
+        font-family: arial;
+        font-style: italic;
+        font-weight: bold;
 }
 
 #comingUpSystem {
+
+      font-family: arial;
+      font-style: italic;
+      font-weight: bold;
     padding-right: 5px;
-    color: #856899;
+    color: #ffffff;
     width: 100px;
     text-align: right;
     background: #271e2f;
 }
 #comingUpCathegory {
-    padding: 2px;
     color: #856899;
     width: 220px;
     background: #271e2f;
 }
 
 #justMissedGame {
+
+      font-family: arial;
+      font-style: italic;
+      font-weight: bold;
     padding: 2px;
-    color: #856899;
+    color: #ffffff;
     width: 400px;
-    background: #362b41;
+        font-size: 30px;
 }
 
 #justMissedSystem {
@@ -107,6 +127,7 @@ body {
     width: 100px;
     text-align: right;
     background: #271e2f;
+
 }
 #justMissedCathegory {
     padding: 2px;
@@ -114,4 +135,3 @@ body {
     width: 220px;
     background: #271e2f;
 }
-

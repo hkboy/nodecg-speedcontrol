@@ -20,9 +20,6 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-image: url('/graphics/nodecg-speedcontrol/images/Background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 1280px;
     height: 720px;
     overflow: hidden;
@@ -40,11 +37,11 @@ body {
 }
 
 .timer_stopped {
-  color: gray;
+  color: lightgray;
 }
 
 .timer_finished {
-    color: rgba(0,127,0,1);
+    color: rgba(0,255,252,1);
 }
 
 .editableObject {
@@ -62,7 +59,7 @@ body {
 }
 
 #runInformationGameEstimate:before {
-  content: 'EST: ';
+  content: ;
 }
 
 #runInformationGameEstimate:after {
@@ -76,7 +73,7 @@ body {
     width: 33%;
     height: 7%;
     display: flex;
-    overflow: hidden;
+    overflow: fast;
 }
 
 .runnerLogo {
@@ -86,19 +83,21 @@ body {
     background-size: 90%;
     width: 12%;
     height: 100%;
+	display:none;
     vertical-align: middle;
 }
 
 .runnerInfo {
-    font-family: FFFForward;
-    color: #8d7996;
-    background: rgba(255,255,255,0.1);
+    font-family: Gotham;
+	
+	    font-size: 20px;
+    color: #FFF;
+
     line-height: 3.3em;
     height: 100%;
     width: 100%;
-    vertical-align: middle;
+text-align:left;
     padding-left: 15px;
-    flex: 1;
 }
 
 #runInformationContainer {
@@ -113,10 +112,9 @@ body {
 
 #runInformationFields {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: nowrap;
     height: 100%;
     width: 100%;
-    background: rgba(255,255,255,0.1);
     padding-left: 15px;
     flex: 1;
     overflow: hidden;
@@ -124,35 +122,41 @@ body {
 
 #runInformationGameEstimate {
     position: relative;
+	font-size: 20px;
     top: 10%;
-    font-family: FFFForward;
-    font-size: 1em;
-    text-align: center;
-    color: rgba(255,255,255,0.25);
+	font-family: gotham;
+
+    text-align: left;
 }
 
 #runInformationGameName {
-    font-family: FFFForward;
-    font-size: .7em;
-    text-align: left;
-    color: #8d7996;
+    font-size: 20px;
+    text-align: right;
+	    font-family: gotham;
+	display:none;
+	font-weight: bold;
+	margin-bottom:0px;
+    color: #fff;
     width: 87.5%;
-    white-space: nowrap;
 }
 
 #runInformationGameCategory {
-    font-family: FFFForward;
-    font-size: .7em;
-    color: #8d7996;
+    font-size: 20px;
+	margin-top:0px;
+    color: #fff;
+	    font-family: gotham;
     width: 38%;
     text-align: left;
-    white-space: nowrap;
+
 }
 
 #runInformationGameSystem {
     font-family: FFFForward;
     font-size: .7em;
-    color: #8d7996;
+    color: #fff;
+	display:none;
+	    font-family: gotham;
+	font-weight: bold;
     width: 175px;
     text-align: right;
     white-space: nowrap;
@@ -166,6 +170,7 @@ body {
     width: 12%;
     height: 100%;
     vertical-align: middle;
+	display:none;
 }
 
 .twitchLogo {
@@ -177,27 +182,52 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 32%;
-    height: 14%;
-    background: rgba(255,255,255,0.1);
+    width: 25%;
+    height: 10%;
+	   background: rgba(255,255,255,0.1);
 }
 
 #timer {
     position: relative;
-    font-family: FFFForward;
-    font-size: 2.3em;
+    font-size: 50px;
     text-align: center;
+		    font-family: gotham;
     top: 5px;
 }
 
 #marathonLogo {
     position: fixed;
     top: 0px;
-    width: 316px;
-    height: 88px;
+    width: 320px;
+	display:none;
+    height: 63px;
     background-image: url('/graphics/nodecg-speedcontrol/images/SpeedcontrolLogo.png');
     background-repeat: no-repeat;
     background-size: 85%;
+}
+
+#comingUp {
+    font-family: arial;
+    color: #e8ba6c;
+    font-size: 24px;
+    text-align: left;
+    padding-bottom: 5px;
+    width: 400px;
+	}
+#comingUpRun {
+    position: absolute;
+    font-family: FFFForward;
+    font-size: 14px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 400px;
+}
+#comingUpGame {
+font-family: gotham;
+font-size:20px;
+    padding: 0px;
+    color: #ffffff;
+    width: 400px;
 }
 
 .runnerTimerFinishedContainer {
